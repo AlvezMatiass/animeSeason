@@ -5,13 +5,13 @@
 }
 
 body {
-    background-color: #2A324B;
-    color: #FFFADC;
+    background-color: rgb(28, 28, 28);
+    color: #f3f1e2;
     font-family: 'Noto Serif JP', serif;
 }
 
 a {
-    color: #FFFADC;
+    color: #f3f1e2;
 }
 
 /* GRID AREAS */
@@ -20,12 +20,24 @@ a {
     grid-area: grid--uno;
 }
 
-.grid--principalDos {
-    grid-area: grid--dos;
+.display--lunes {
+    grid-area: grid--lunes;
 }
 
-.grid--principalTres {
-    grid-area: grid--tres;
+.display--miercoles {
+    grid-area: grid--miercoles;
+}
+
+.display--jueves {
+    grid-area: grid--jueves;
+}
+
+.display--sabados {
+    grid-area: grid--sabados;
+}
+
+.grid--domingo {
+    grid-area: grid--domingo;
 }
 
 .grid--footer {
@@ -36,12 +48,15 @@ a {
     display: grid;
     grid-template-areas: 
     "grid--uno"
-    "grid--dos"
-    "grid--tres"
+    "grid--lunes"
+    "grid--miercoles"
+    "grid--jueves"
+    "grid--sabados"
+    "grid--domingo"
     "grid--footer"
     ;
     grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
 }
 
 /* PRINCIPAL */
@@ -52,8 +67,15 @@ a {
     margin: auto;
 }
 
+.text--principalUno {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 2rem 0 .5rem 0;
+}
+
 .text--principal {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     text-align: center;
     margin: 2rem 0 .5rem 0;
@@ -65,10 +87,30 @@ a {
 
 .text--icon i {
     font-size: 1.7rem;
-    padding: 1rem;
+    padding: 1.5rem .5rem;
 }
 
-.display--principal {
+.flex--lunes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex--miercoles {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex--jueves {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex--sabados {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex--domingo {
     display: flex;
     flex-wrap: wrap;
 }
@@ -77,9 +119,10 @@ a {
     width: 280px;
     margin: 1rem auto;
     text-align: center;
-    background-color: #FFFADC;
-    color: #2A324B;
+    background-color: #f3f1e2;
+    color: #111;
     padding: .5rem;
+    border-radius: 2px;
     box-shadow: 0px 0px 24px -4px rgba(0,0,0,0.73);
     -webkit-box-shadow: 0px 0px 24px -4px rgba(0,0,0,0.73);
     -moz-box-shadow: 0px 0px 24px -4px rgba(0,0,0,0.73);
@@ -87,6 +130,7 @@ a {
 
 .card--principal img {
     width: 260px;
+    border-radius: 2px;
     box-shadow: 0px 0px 12px -4px rgba(0,0,0,0.73);
     -webkit-box-shadow: 0px 0px 12px -4px rgba(0,0,0,0.73);
     -moz-box-shadow: 0px 0px 12px -4px rgba(0,0,0,0.73);

@@ -59,9 +59,13 @@ a {
     margin: 2rem 0 .5rem 0;
 }
 
+.text--icon {
+    text-align: center;
+}
+
 .text--icon i {
     font-size: 1.7rem;
-    padding: 0 1rem;
+    padding: 1rem;
 }
 
 .display--principal {
